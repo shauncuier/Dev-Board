@@ -8,12 +8,9 @@ function randomBackground() {
     document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
 }
 
-
 function gotoBlog(){
     window.location.href = "./blog.html";
 }
-
-
 
 function clearHistory() {
     document.getElementById("activityLog").style.display = "none";
