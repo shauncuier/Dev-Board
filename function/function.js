@@ -14,3 +14,7 @@ function gotoBlog(){
 }
 
 
+
+function clearHistory() {
+    document.getElementById("activityLog").style.display = "none";
+}

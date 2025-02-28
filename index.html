@@ -57,7 +57,7 @@
                                 <img src="./assets/calender.png" alt="">
                             </div>
                             <div id="date" class="text-lg">
-                                
+
                             </div>
                         </div>
                     </div>
@@ -196,16 +196,18 @@
                         <img src="./assets/activity.png" alt="">
                         <p class="text-lg font-medium">Activity Log</p>
                     </div>
-                    <button class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white mb-4">Clear History</button>
+                    <button onclick="clearHistory()" class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white mb-4">Clear History</button>
                 </div>
                 <hr class="border-t-1 border-dashed border-gray-300">
+                <div id="activityLog">
+                    <p class="p-6 m-8 text-center bg-[#F4F7FF] rounded-lg">
+                        You have Complete The Task Add Dark Mode at <span id="complededTime"></span>
+                    </p>
+                    <p class="p-6 m-8 text-center bg-[#F4F7FF] rounded-lg">
+                        You have Complete The Task Add Dark Mode at 12:48:15 PM
+                    </p>
+                </div>
 
-                <p class="p-6 m-8 text-center bg-[#F4F7FF] rounded-lg">
-                    You have Complete The Task Add Dark Mode at <span id="complededTime"></span>
-                </p>
-                <p class="p-6 m-8 text-center bg-[#F4F7FF] rounded-lg">
-                    You have Complete The Task Add Dark Mode at 12:48:15 PM
-                </p>
             </div>
         </div>
     </main>
