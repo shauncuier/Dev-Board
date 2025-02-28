@@ -9,3 +9,8 @@ function randomBackground() {
 }
 
 
+function gotoBlog(){
+    window.location.href = "./blog.html";
+}
+
+
