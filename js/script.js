@@ -3,8 +3,8 @@
 let date = new Date();
 dateSplited = date.toDateString().split(" ");
 document.getElementById("date").innerHTML = `
-<p>${dateSplited[0]},</p>
-<p class="font-bold">${dateSplited[1]} ${dateSplited[2]} ${dateSplited[3]}</p>
+<p class="text-[22px]">${dateSplited[0]} ,</p>
+<p class="text-[22px] font-bold">${dateSplited[1]} ${dateSplited[2]} ${dateSplited[3]}</p>
 `;
 
 // Functions 
@@ -62,7 +62,7 @@ for (let i = 0; i < mainBtn.length; i++) {
         p = document.createElement("p");
         p.innerHTML = 
         `<p id="text" class="p-6 m-4 text-center bg-[#F4F7FF] rounded-lg">
-            You have Complete The Task <b>${currentCardTitle}</b> at ${date}
+            You have Complete The Task <span class="font-semibold">${currentCardTitle}</span> at <span class="font-medium">${date}</span>
         </p>`;
         p.classList.add('message-child')
         activityLog.appendChild(p);

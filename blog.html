@@ -21,7 +21,7 @@
                 <img class="h-14 mr-3" src="./assets/logo.png" alt="">
                 <h3 class="text-3xl">Dev<span class="font-bold">Board</span></h3>
             </div>
-            <a href="./index.html" class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white cursor-pointer">Back
+            <a href="./index.html" class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium  text-white cursor-pointer">Back
                 to Desk</a>
         </nav>
     </header>
@@ -29,62 +29,56 @@
 
     <!-- Main Start -->
     <main class="container mx-auto ">
+        <h1 class="text-4xl font-bold text-center my-10">Dev FAQ</h1>
         <div class=" mb-20">
             <div class="bg-white shadow-md rounded-2xl">
-                <h1 class="p-6 text-lg font-bold">Question-1: What are the different ways to select an element in the
-                    DOM?</h1>
-                <hr class="border-t-1 border-dashed border-gray-300">
-                <p class="p-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, labore at sit
-                    voluptatem nemo adipisci facere hic recusandae modi non ipsum quasi tempore laboriosam laudantium
-                    aspernatur fuga, ipsa omnis suscipit aperiam commodi aliquam cum! Odit, id! Sit voluptatum nulla ab
-                    ipsam, eaque voluptatibus asperiores ipsum nesciunt 
-                </p>
+            <h1 class="p-6 text-lg font-bold">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <hr class="border-t-1 border-dashed border-gray-300">
+            <p class="p-6">
+                The main DOM selection methods are: getElementById() for selecting by ID, getElementsByClassName() for selecting by class, 
+                getElementsByTagName() for selecting by tag name, querySelector() for selecting first matching element, and 
+                querySelectorAll() for selecting all matching elements using CSS selectors.
+            </p>
             </div>
             <br>
             <div class="bg-white shadow-md rounded-2xl">
-                <h1 class="p-6 text-lg font-bold">Question-1: What are the different ways to select an element in the
-                    DOM?</h1>
-                <hr class="border-t-1 border-dashed border-gray-300">
-                <p class="p-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, labore at sit
-                    voluptatem nemo adipisci facere hic recusandae modi non ipsum quasi tempore laboriosam laudantium
-                    aspernatur fuga, ipsa omnis suscipit aperiam commodi aliquam cum! Odit, id! Sit voluptatum nulla ab
-                    ipsam, eaque voluptatibus asperiores ipsum nesciunt possimus vel reiciendis nisi deserunt porro
-                    excepturi dolorum dolores rerum 
-                </p>
+            <h1 class="p-6 text-lg font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent?</h1>
+            <hr class="border-t-1 border-dashed border-gray-300">
+            <p class="p-6">
+                innerHTML gets or sets HTML content including tags, innerText gets or sets visible text content while respecting CSS styling, 
+                and textContent gets or sets raw text content ignoring styling and hidden elements. innerHTML can pose security risks when 
+                setting content with user input.
+            </p>
             </div>
             <br>
             <div class="bg-white shadow-md rounded-2xl">
-                <h1 class="p-6 text-lg font-bold">Question-1: What are the different ways to select an element in the
-                    DOM?</h1>
-                <hr class="border-t-1 border-dashed border-gray-300">
-                <p class="p-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, labore at sit
-                    voluptatem nemo adipisci facere hic recusandae modi non ipsum quasi tempore laboriosam laudantium
-                    aspernatur fuga, ipsa omnis suscipit aperiam commodi
-                </p>
+            <h1 class="p-6 text-lg font-bold">Question-3: What is event delegation in the DOM?</h1>
+            <hr class="border-t-1 border-dashed border-gray-300">
+            <p class="p-6">
+                Event delegation is a technique where you attach a single event listener to a parent element to handle events on its 
+                children, even those added dynamically. It improves performance by reducing the number of event listeners and works with 
+                dynamic content.
+            </p>
             </div>
             <br>
             <div class="bg-white shadow-md rounded-2xl">
-                <h1 class="p-6 text-lg font-bold">Question-1: What are the different ways to select an element in the
-                    DOM?</h1>
-                <hr class="border-t-1 border-dashed border-gray-300">
-                <p class="p-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, labore at sit
-                    voluptatem nemo adipisci facere hic recusandae modi non ipsum quasi tempore laboriosam laudantium
-                    aspernatur fuga, ipsa omnis suscipit aperiam commodi aliquam cum! Odit, id! Sit voluptatum nulla ab
-                    ipsam, eaque voluptatibus asperiores ipsum nesciunt possimus vel reiciendis nisi deserunt porro
-                    excepturi dolorum dolores rerum 
-                </p>
+            <h1 class="p-6 text-lg font-bold">Question-4: What is event bubbling in the DOM?</h1>
+            <hr class="border-t-1 border-dashed border-gray-300">
+            <p class="p-6">
+                Event bubbling is when an event triggers on the deepest target element and then "bubbles up" through its ancestor elements 
+                in the DOM tree. For example, clicking a button inside a div triggers the click event on both the button and its parent div.
+            </p>
             </div>
             <br>
             <div class="bg-white shadow-md rounded-2xl">
-                <h1 class="p-6 text-lg font-bold">Question-1: What are the different ways to select an element in the
-                    DOM?</h1>
-                <hr class="border-t-1 border-dashed border-gray-300">
-                <p class="p-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, labore at sit
-                    voluptatem nemo adipisci facere hic recusandae modi non ipsum quasi tempore laboriosam laudantium
-                    aspernatur fuga, ipsa omnis suscipit aperiam commodi 
-                </p>
+            <h1 class="p-6 text-lg font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <hr class="border-t-1 border-dashed border-gray-300">
+            <p class="p-6">
+                To create elements, use createElement(). To add elements, use appendChild() or insertBefore(). To remove elements, use 
+                remove() or removeChild(). For example: let div = document.createElement('div') creates a new div, 
+                parent.appendChild(div) adds it, and div.remove() removes it.
+            </p>
             </div>
-
         </div>
     </main>
     <!-- Main End -->
