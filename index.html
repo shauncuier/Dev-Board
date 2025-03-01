@@ -24,7 +24,7 @@
             <div class="flex justify-between items-center">
                 <div class="flex justify-between items-center gap-2 bg-slate-100 p-4 rounded-[32px] mr-14">
                     <img src="./assets/checkbox.png" alt="">
-                    <h2 class="text-2xl font-bold">23</h2>
+                    <h2 id="taskDone" class="text-2xl font-bold">00</h2>
                 </div>
 
                 <img onclick="randomBackground()" class="p-3 rounded-full bg-[#F4F7FF] cursor-pointer"
@@ -44,7 +44,7 @@
                             <div><img src="./assets/checkbox.png" alt=""></div>
                             <div>
                                 <p class="text-base">Task Assinged</p>
-                                <p class="text-3xl font-bold">05</p>
+                                <p id="taskAssigned" class="text-3xl font-bold">06</p>
                             </div>
                         </div>
                         <div onclick="gotoBlog()"
@@ -65,9 +65,11 @@
 
 
                 <div class="grid grid-cols-3 p-6 gap-9">
+
+                    <!-- Card 1 -->
                     <div class="p-6 bg-[#F4F7FF] rounded-2xl">
                         <p class="inline-block px-4 py-2 bg-white rounded-lg">ShopEase</p>
-                        <h3 class="text-2xl font-medium my-4">Fix Mobile Button Issue </h3>
+                        <h3 class="text-2xl font-medium my-4 card-title">Fix Mobile Button Issue </h3>
 
                         <p class="truncate p-4 bg-white rounded-lg mb-4"> Debug using Chrome <br> DevTools,
                             check for overlapping elements, and ensure onClick works
@@ -75,24 +77,57 @@
                             and ensure onClick works properly
                         </p>
                         <hr class="border-t-1 border-dashed border-gray-300">
+                        <div class="flex justify-between items-center mt-4">
+                            <div class="">
+                                <p>Deadline</p>
+                                <p>21 March 2025</p>
+                            </div>
+                            <button
+                                class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white cursor-pointer mainBtn">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="p-6 bg-[#F4F7FF] rounded-2xl">
+                        <p class="inline-block px-4 py-2 bg-white rounded-lg">CloudSync</p>
+                        <h3 class="text-2xl font-medium my-4 card-title">Add Dark Mode </h3>
+
+                        <p class="truncate p-4 bg-white rounded-lg mb-4"> Store the user's preference in <br>  localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                        </p>
+                        <hr class="border-t-1 border-dashed border-gray-300">
 
                         <div class="flex justify-between items-center mt-4">
                             <div class="">
                                 <p>Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white">Completed</button>
+                            <button
+                                class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white cursor-pointer mainBtn">Completed</button>
                         </div>
                     </div>
-
-
+                    <!-- Card 3 -->
                     <div class="p-6 bg-[#F4F7FF] rounded-2xl">
-                        <p class="inline-block px-4 py-2 bg-white rounded-lg">ShopEase</p>
-                        <h3 class="text-2xl font-medium my-4">Fix Mobile Button Issue </h3>
+                        <p class="inline-block px-4 py-2 bg-white rounded-lg">SwiftPay</p>
+                        <h3 class="text-2xl font-medium my-4 card-title">Optimize  Home page </h3>
 
-                        <p class="truncate p-4 bg-white rounded-lg mb-4"> Debug using Chrome DevTools,<br>
-                            check for overlapping elements, and ensure onClick works
-                            properly
+                        <p class="truncate p-4 bg-white rounded-lg mb-4"> Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                        </p>
+                        <hr class="border-t-1 border-dashed border-gray-300">
+
+                        <div class="flex justify-between items-center mt-4">
+                            <div class="">
+                                <p>Deadline</p>
+                                <p>21 March 2025</p>
+                            </div>
+                            <button class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white cursor-pointer mainBtn">Completed</button>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="p-6 bg-[#F4F7FF] rounded-2xl">
+                        <p class="inline-block px-4 py-2 bg-white rounded-lg">Meta</p>
+                        <h3 class="text-2xl font-medium my-4 card-title">Add new emoji 🤲</h3>
+
+                        <p class="truncate p-4 bg-white rounded-lg mb-4"> Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly 
                             and ensure onClick works properly
                         </p>
                         <hr class="border-t-1 border-dashed border-gray-300">
@@ -102,17 +137,15 @@
                                 <p>Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white">Completed</button>
+                            <button class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white cursor-pointer mainBtn">Completed</button>
                         </div>
                     </div>
+                    <!-- Card 5 -->
+                    <div class="p-6 bg-[#F4F7FF] rounded-2xl ">
+                        <p class="inline-block px-4 py-2 bg-white rounded-lg">Google LLC</p>
+                        <h3 class="text-2xl font-medium my-4 card-title">Integrate OpenAI API</h3>
 
-                    <div class="p-6 bg-[#F4F7FF] rounded-2xl">
-                        <p class="inline-block px-4 py-2 bg-white rounded-lg">ShopEase</p>
-                        <h3 class="text-2xl font-medium my-4">Fix Mobile Button Issue </h3>
-
-                        <p class="truncate p-4 bg-white rounded-lg mb-4"> Debug using Chrome DevTools,<br>
-                            check for overlapping elements, and ensure onClick works
-                            properly
+                        <p class="truncate p-4 bg-white rounded-lg mb-4"> Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
                             and ensure onClick works properly
                         </p>
                         <hr class="border-t-1 border-dashed border-gray-300">
@@ -122,17 +155,15 @@
                                 <p>Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white">Completed</button>
+                            <button class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white cursor-pointer mainBtn">Completed</button>
                         </div>
                     </div>
-
+                    <!-- Card 6 -->
                     <div class="p-6 bg-[#F4F7FF] rounded-2xl">
-                        <p class="inline-block px-4 py-2 bg-white rounded-lg">ShopEase</p>
-                        <h3 class="text-2xl font-medium my-4">Fix Mobile Button Issue </h3>
+                        <p class="inline-block px-4 py-2 bg-white rounded-lg">Glassdoar</p>
+                        <h3 class="text-2xl font-medium my-4 card-title">Improve Job searching </h3>
 
-                        <p class="truncate p-4 bg-white rounded-lg mb-4"> Debug using Chrome DevTools,<br>
-                            check for overlapping elements, and ensure onClick works
-                            properly
+                        <p class="truncate p-4 bg-white rounded-lg mb-4"> Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
                             and ensure onClick works properly
                         </p>
                         <hr class="border-t-1 border-dashed border-gray-300">
@@ -142,47 +173,7 @@
                                 <p>Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white">Completed</button>
-                        </div>
-                    </div>
-
-                    <div class="p-6 bg-[#F4F7FF] rounded-2xl">
-                        <p class="inline-block px-4 py-2 bg-white rounded-lg">ShopEase</p>
-                        <h3 class="text-2xl font-medium my-4">Fix Mobile Button Issue </h3>
-
-                        <p class="truncate p-4 bg-white rounded-lg mb-4"> Debug using Chrome DevTools,<br>
-                            check for overlapping elements, and ensure onClick works
-                            properly
-                            and ensure onClick works properly
-                        </p>
-                        <hr class="border-t-1 border-dashed border-gray-300">
-
-                        <div class="flex justify-between items-center mt-4">
-                            <div class="">
-                                <p>Deadline</p>
-                                <p>21 March 2025</p>
-                            </div>
-                            <button class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white">Completed</button>
-                        </div>
-                    </div>
-
-                    <div class="p-6 bg-[#F4F7FF] rounded-2xl">
-                        <p class="inline-block px-4 py-2 bg-white rounded-lg">ShopEase</p>
-                        <h3 class="text-2xl font-medium my-4">Fix Mobile Button Issue </h3>
-
-                        <p class="truncate p-4 bg-white rounded-lg mb-4"> Debug using Chrome DevTools,<br>
-                            check for overlapping elements, and ensure onClick works
-                            properly
-                            and ensure onClick works properly
-                        </p>
-                        <hr class="border-t-1 border-dashed border-gray-300">
-
-                        <div class="flex justify-between items-center mt-4">
-                            <div class="">
-                                <p>Deadline</p>
-                                <p>21 March 2025</p>
-                            </div>
-                            <button class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white">Completed</button>
+                            <button class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white cursor-pointer mainBtn">Completed</button>
                         </div>
                     </div>
 
@@ -196,16 +187,13 @@
                         <img src="./assets/activity.png" alt="">
                         <p class="text-lg font-medium">Activity Log</p>
                     </div>
-                    <button onclick="clearHistory()" class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white mb-4 cursor-pointer">Clear History</button>
+                    <button id="clearBtn"
+                        class="bg-[#3752FD] py-3 px-5 rounded-lg font-medium text-white mb-4 cursor-pointer">Clear
+                        History</button>
                 </div>
                 <hr class="border-t-1 border-dashed border-gray-300">
                 <div id="activityLog">
-                    <p class="p-6 m-8 text-center bg-[#F4F7FF] rounded-lg">
-                        You have Complete The Task Add Dark Mode at <span id="complededTime"></span>
-                    </p>
-                    <p class="p-6 m-8 text-center bg-[#F4F7FF] rounded-lg">
-                        You have Complete The Task Add Dark Mode at 12:48:15 PM
-                    </p>
+                    
                 </div>
 
             </div>
@@ -215,6 +203,7 @@
 
     <script src="./function/function.js"></script>
     <script src="./js/currentDate.js"></script>
+    <script src="./js/buttonTask.js"></script>
 </body>
 
 </html>

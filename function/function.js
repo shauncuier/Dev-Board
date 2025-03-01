@@ -13,5 +13,20 @@ function gotoBlog(){
 }
 
 function clearHistory() {
+    if (confirm("Are you sure you want to clear the history?")) {
+        document.getElementById("activityLog").innerHTML = "";
+        document.getElementById("activityLog").style.display = "block";
+    }
     document.getElementById("activityLog").style.display = "none";
+
 }
+
+
+// Time now
+
+function timeNow() {
+    let date = new Date();
+    return date.toLocaleTimeString();
+}
+
+
