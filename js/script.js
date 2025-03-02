@@ -43,19 +43,15 @@ for (let i = 0; i < mainBtn.length; i++) {
         button.style.backgroundColor = "#3751fd85";
         button.style.cursor = "not-allowed";
 
-
         const taskAssigned = document.getElementById("taskAssigned").innerText;
         convertedTaskAssigned = parseInt(taskAssigned) - 1;
-
 
         document.getElementById("taskAssigned").innerText = convertedTaskAssigned;
         const taskDone = document.getElementById("taskDone").innerText;
         convertedTaskDone = parseInt(taskDone) + 1;
         document.getElementById("taskDone").innerText = convertedTaskDone;
 
-
         let date = timeNow();
-
 
         const currentCardTitle = cardTitle[i].innerText;
         activityLog = document.getElementById("activityLog");
@@ -66,7 +62,6 @@ for (let i = 0; i < mainBtn.length; i++) {
         </p>`;
         p.classList.add('message-child')
         activityLog.appendChild(p);
-
 
         if (convertedTaskAssigned === 0) {
             alert("Congrates!!! You have completed all the current Task");
